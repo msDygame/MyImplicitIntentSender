@@ -3,6 +3,8 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="string_broadcast_cross_activity">Broadcast cross activity</string>
-    <string name="string_implicit_intent_activity">Implicit Intent Activity</string>
+    <string name="string_broadcast_cross_activity">Broadcast cross activity send com.dygame.broadcast</string>
+    <string name="string_implicit_intent_activity">Implicit Intent Activity by com.dygame.implicitintent</string>
+    <string name="string_implicit_intent_action_view">Implicit Intent Activity by ACTION_VIEW</string>
+    <string name="string_quit">Quit</string>
 </resources>

@@ -59,7 +59,7 @@ public class MainActivity extends ActionBarActivity
             @Override
             public void onClick(View v)
             {
-                String sAction = "com.dygame.myimplicitintentservicesample.broadcast" ;
+                String sAction = "com.dygame.broadcast" ;
                 Intent intent = new Intent();
                 intent.setAction(sAction);
                 intent.putExtra("MyCrashHandler", "POI~");
@@ -67,16 +67,16 @@ public class MainActivity extends ActionBarActivity
                 Log.d(TAG, "send Broadcast=" + sAction);
             }
         });
-        //自定義隱式意圖跨進程通信;//如果找不到"com.dygame.myimplicitintent"的activity,呼叫的activity就會當
+        //自定義隱式意圖跨進程通信;//如果找不到"com.dygame.implicitintent"的activity,呼叫的activity就會當
         pImplicitIntentButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
                 Intent intent = new Intent();
-                intent.setAction("com.dygame.myimplicitintent");
+                intent.setAction("com.dygame.implicitintent");
                 startActivity(intent);
-                Log.d(TAG, "Implicit Intent=" + "com.dygame.myimplicitintent");
+                Log.d(TAG, "Implicit Intent=" + "com.dygame.implicitintent");
             }
         });
         //測試隱式意圖;//it is work.
